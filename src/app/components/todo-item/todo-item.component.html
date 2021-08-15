@@ -1,0 +1,9 @@
+<div [ngClass]="setClasses()">              <!-- ngClass Directive - seltClasses method is resided in the ts component -->
+    <p>                                     <!-- todo-item component -->
+        <input (change)="onToggle(todo)" type="checkbox" />   <!--The way to add an  an event in angular we use parenthesis-->
+        {{ todo.title }}
+        <button (click)="onDelete(todo)" class="del">X</button> <!--We added a click event-->
+    </p>
+</div>
+
+
